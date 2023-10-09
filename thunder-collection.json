@@ -1,0 +1,351 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Trabalho CODO",
+    "dateExported": "2023-09-25T22:52:52.175Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "385ba472-7c14-492c-aa24-2fd12c4e0aa8",
+            "name": "Filme",
+            "containerId": "",
+            "created": "2023-09-25T22:24:34.778Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "4f65fcd7-2131-45fd-ab14-47b572eb36f9",
+            "name": "Locacao",
+            "containerId": "",
+            "created": "2023-09-25T22:24:45.499Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "69762403-ced8-4e29-87c3-241a7307dd4b",
+            "name": "Usuario",
+            "containerId": "",
+            "created": "2023-09-25T22:24:57.364Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "08e5a90a-b55a-44b9-bada-de71e263a057",
+            "name": "Genero",
+            "containerId": "",
+            "created": "2023-09-25T22:46:26.799Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "085e4752-74f2-4878-9c8a-2e0c3738770a",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "4f65fcd7-2131-45fd-ab14-47b572eb36f9",
+            "name": "GET LOCACAO",
+            "url": "http://127.0.0.1:3000/locacao",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2023-09-25T22:30:23.272Z",
+            "modified": "2023-09-25T22:30:45.308Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1Y2NhamJhc3Rvc0BnbWFpbC5jb20iLCJpYXQiOjE2OTU2MDYxMjQsImV4cCI6MTY5NTY5MjUyNCwic3ViIjoib3RoZXJzIn0.7ZL6_RZPkF_-FjhzBoxj3vOt4-uPj6jHmfndBoDFgRc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "91d3f801-2d97-489e-9bf6-93464ff7ab37",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "4f65fcd7-2131-45fd-ab14-47b572eb36f9",
+            "name": "UPDATE NA LOCACAO",
+            "url": "http://127.0.0.1:3000/locacao",
+            "method": "PUT",
+            "sortNum": 7500,
+            "created": "2023-09-25T22:30:51.179Z",
+            "modified": "2023-09-25T22:34:40.580Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"a5d4a80b-faa4-4376-b9e1-6dd583e83801\",\n  \"description\": \"Update locacao\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1Y2NhamJhc3Rvc0BnbWFpbC5jb20iLCJpYXQiOjE2OTU2MDYxMjQsImV4cCI6MTY5NTY5MjUyNCwic3ViIjoib3RoZXJzIn0.7ZL6_RZPkF_-FjhzBoxj3vOt4-uPj6jHmfndBoDFgRc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8f910e37-6832-4c44-9a30-7d224d1c3492",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "69762403-ced8-4e29-87c3-241a7307dd4b",
+            "name": "CRIAR USUÁRIO",
+            "url": "http://127.0.0.1:3000/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-25T01:41:21.316Z",
+            "modified": "2023-09-25T02:00:37.914Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Admin\",\n  \"email\":\"admin@gmail.com\",\n  \"admin\": \"true\",\n  \"password\": \"12345\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "teste",
+                    "password": "1234"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "8c39a521-892e-4d5b-a439-492630f1a545",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "385ba472-7c14-492c-aa24-2fd12c4e0aa8",
+            "name": "CREATE  FILME",
+            "url": "http://127.0.0.1:3000/filmes",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-25T01:55:02.736Z",
+            "modified": "2023-09-25T02:01:10.204Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Filme1\",\n  \"description\":\"Filme1\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluMiIsImlhdCI6MTY5NTYwNzI0MywiZXhwIjoxNjk1NjkzNjQzLCJzdWIiOiJvdGhlcnMifQ.gikCmhPxcUSQMbOJgq2uPO22vG3ZC84alm_ibL7h2KA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "855ce20b-7d7d-4961-862d-7320d1da9922",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "4f65fcd7-2131-45fd-ab14-47b572eb36f9",
+            "name": "CREATE LOCACAO",
+            "url": "http://127.0.0.1:3000/locacao",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-25T22:25:28.885Z",
+            "modified": "2023-09-25T22:35:42.982Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\":\"Locacao Exemplo\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluMiIsImlhdCI6MTY5NTYwNzI0MywiZXhwIjoxNjk1NjkzNjQzLCJzdWIiOiJvdGhlcnMifQ.gikCmhPxcUSQMbOJgq2uPO22vG3ZC84alm_ibL7h2KA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8cd79544-1787-48da-bb7b-152ec2b10a3e",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "08e5a90a-b55a-44b9-bada-de71e263a057",
+            "name": "GET GENERO",
+            "url": "http://127.0.0.1:3000/genero",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-09-25T22:47:12.536Z",
+            "modified": "2023-09-25T22:48:35.740Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1Y2NhamJhc3Rvc0BnbWFpbC5jb20iLCJpYXQiOjE2OTU2MDYxMjQsImV4cCI6MTY5NTY5MjUyNCwic3ViIjoib3RoZXJzIn0.7ZL6_RZPkF_-FjhzBoxj3vOt4-uPj6jHmfndBoDFgRc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "06a421b6-9569-4180-a76c-93357c936cbd",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "69762403-ced8-4e29-87c3-241a7307dd4b",
+            "name": "LOGAR COM O USUÁRIO",
+            "url": "http://127.0.0.1:3000/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-09-25T01:45:20.352Z",
+            "modified": "2023-09-25T02:00:43.346Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"Admin\",\n  \"password\": \"Admin\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "teste",
+                    "password": "1234"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "e25a5981-f967-46ec-b3be-68665c582659",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "385ba472-7c14-492c-aa24-2fd12c4e0aa8",
+            "name": "GET FILMES",
+            "url": "http://127.0.0.1:3000/filmes",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-09-25T01:55:16.233Z",
+            "modified": "2023-09-25T01:55:16.233Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1Y2NhamJhc3Rvc0BnbWFpbC5jb20iLCJpYXQiOjE2OTU2MDYxMjQsImV4cCI6MTY5NTY5MjUyNCwic3ViIjoib3RoZXJzIn0.7ZL6_RZPkF_-FjhzBoxj3vOt4-uPj6jHmfndBoDFgRc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c86530a0-ad0c-43b7-a240-f26e90addfa4",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "4f65fcd7-2131-45fd-ab14-47b572eb36f9",
+            "name": "DELETE LOCACAO",
+            "url": "http://127.0.0.1:3000/locacao",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2023-09-25T22:35:10.667Z",
+            "modified": "2023-09-25T22:35:29.645Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"a5d4a80b-faa4-4376-b9e1-6dd583e83801\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluMiIsImlhdCI6MTY5NTYwNzI0MywiZXhwIjoxNjk1NjkzNjQzLCJzdWIiOiJvdGhlcnMifQ.gikCmhPxcUSQMbOJgq2uPO22vG3ZC84alm_ibL7h2KA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ac4821c9-78a1-4621-8b5e-3ceb65dfc34b",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "08e5a90a-b55a-44b9-bada-de71e263a057",
+            "name": "UPDATE GENERO",
+            "url": "http://127.0.0.1:3000/genero",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-09-25T22:47:16.617Z",
+            "modified": "2023-09-25T22:51:45.540Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"b3c4daa0-5d09-4e9b-9732-4184348efae9\",\n  \"name\": \"Update Genero\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1Y2NhamJhc3Rvc0BnbWFpbC5jb20iLCJpYXQiOjE2OTU2MDYxMjQsImV4cCI6MTY5NTY5MjUyNCwic3ViIjoib3RoZXJzIn0.7ZL6_RZPkF_-FjhzBoxj3vOt4-uPj6jHmfndBoDFgRc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a75550a6-82c2-488f-9d9a-0d0a1f95def0",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "385ba472-7c14-492c-aa24-2fd12c4e0aa8",
+            "name": "UPDATE FILMES",
+            "url": "http://127.0.0.1:3000/filmes",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-09-25T22:36:56.533Z",
+            "modified": "2023-09-25T22:44:44.413Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"65da1b76-4f00-433f-b27e-e2082b7cb870\",\n  \"name\": \"Update Filme\",\n  \"description\": \"Update Filme\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1Y2NhamJhc3Rvc0BnbWFpbC5jb20iLCJpYXQiOjE2OTU2MDYxMjQsImV4cCI6MTY5NTY5MjUyNCwic3ViIjoib3RoZXJzIn0.7ZL6_RZPkF_-FjhzBoxj3vOt4-uPj6jHmfndBoDFgRc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8f39eb0e-328f-45c8-a6a1-980187751576",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "08e5a90a-b55a-44b9-bada-de71e263a057",
+            "name": "CREATE GENERO",
+            "url": "http://127.0.0.1:3000/genero",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-09-25T22:47:19.170Z",
+            "modified": "2023-09-25T22:49:35.084Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Genero Exemplo\",\n  \"description\":\"Genero Exemplo\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluMiIsImlhdCI6MTY5NTYwNzI0MywiZXhwIjoxNjk1NjkzNjQzLCJzdWIiOiJvdGhlcnMifQ.gikCmhPxcUSQMbOJgq2uPO22vG3ZC84alm_ibL7h2KA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3cd1750c-dbcb-4592-89e0-64c69e1e4f99",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "385ba472-7c14-492c-aa24-2fd12c4e0aa8",
+            "name": "DELETE FILMES",
+            "url": "http://127.0.0.1:3000/filmes",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-09-25T22:45:07.869Z",
+            "modified": "2023-09-25T22:45:35.380Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"65da1b76-4f00-433f-b27e-e2082b7cb870\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1Y2NhamJhc3Rvc0BnbWFpbC5jb20iLCJpYXQiOjE2OTU2MDYxMjQsImV4cCI6MTY5NTY5MjUyNCwic3ViIjoib3RoZXJzIn0.7ZL6_RZPkF_-FjhzBoxj3vOt4-uPj6jHmfndBoDFgRc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b33a4dd6-0dad-4a3c-90d1-841624a5adc5",
+            "colId": "01917f1e-3f81-4cb7-9f27-d0681338d23e",
+            "containerId": "08e5a90a-b55a-44b9-bada-de71e263a057",
+            "name": "DELETE GENERO",
+            "url": "http://127.0.0.1:3000/genero",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-09-25T22:47:21.282Z",
+            "modified": "2023-09-25T22:51:55.085Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"b3c4daa0-5d09-4e9b-9732-4184348efae9\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluMiIsImlhdCI6MTY5NTYwNzI0MywiZXhwIjoxNjk1NjkzNjQzLCJzdWIiOiJvdGhlcnMifQ.gikCmhPxcUSQMbOJgq2uPO22vG3ZC84alm_ibL7h2KA"
+            },
+            "tests": []
+        }
+    ]
+}
