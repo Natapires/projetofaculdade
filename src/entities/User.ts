@@ -1,11 +1,8 @@
+import { profile } from "console";
 import {
-    Entity,
-    PrimaryColumn,
-    Column,
-    CreateDateColumn,
-    UpdateDateColumn,
-  } from "typeorm";
+    Entity,    PrimaryColumn,    Column,    CreateDateColumn,    UpdateDateColumn,    OneToOne,    JoinColumn,  } from "typeorm";
   import { v4 as uuid } from "uuid";
+import {Profile} from "./Profile";
   
   @Entity("users")
   class User {
@@ -30,11 +27,15 @@ import {
   
     @UpdateDateColumn()
       updated_at!: Date;
+
+    @OneToOne(() => Profile)
+    @JoinColumn()
+    profile: Profile
   
     constructor() {
-      if (!this.id) {
+      if (!this.id) [
         this.id = uuid();
-      }
+      ]
     }
   }
   

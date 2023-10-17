@@ -15,11 +15,13 @@ import { ListLocacaoController } from "./controller/locacao/ListLocacaoControlle
 import { CreateLocacaoController } from "./controller/locacao/CreateLocacaoController";
 import { UpdateLocacaoController } from "./controller/locacao/UpdateLocacaoController";
 import { DeleteLocacaoController } from "./controller/locacao/DeleteLocacaoController";
+import { CreateProfileController, CreateProfileController } from "./controller/Profile/CreateProfileController";
 
 
 const createUserController  = new CreateUserController();
 const authenticateUserController  = new AuthenticateUserController();
 const listUsersController= new ListUsersController();
+const CreateProfileController = new CreateProfileController();
 
 
 const router = Router();
@@ -27,6 +29,10 @@ router.post("/login", authenticateUserController.handle);
 router.post("/users", createUserController.handle);
 router.use(ensureAuthenticated)
 router.get("/users", listUsersController.handle);
+
+//Profile
+router.post("/profile", CreateProfileController.handle);
+router.get("/profile", listUsersController.handle); 
 
 
 // Filmes
